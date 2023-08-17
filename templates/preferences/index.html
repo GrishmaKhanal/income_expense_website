@@ -3,7 +3,7 @@
 <div class="container mt-3">
   <h5>Currency</h5>
   {% include 'partials/_messages.html' %}
-  <form action="{% url 'preferences'%}" method="post">
+  {% comment %} <form action="{% url 'preferences'%}" method="post">
     {% csrf_token %}
     <div class="input-group">
       <select name="currency" class="custom-select" id="inputGroupSelect04">
@@ -23,7 +23,7 @@
         <input class="btn btn-outline-secondary" type="submit" value="Save" />
       </div>
     </div>
-  </form>
+  </form> {% endcomment %}
 </div>
 
 <hr />
